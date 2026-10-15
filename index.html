@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ray weds Adepah</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero reveal" id="hero">
+  <div class="hero-inner">
+    <small id="t-lead">We're getting married</small>
+    <h1 class="names"><span id="t-groom">Ray</span><span class="amp">weds</span><span id="t-bride">Adepah</span></h1>
+    <div class="when"><span id="t-date-text">Saturday, 6 February 2027</span></div>
+    <div class="actions">
+      <a class="btn solid map-link" id="mapLinkHero" href="https://maps.app.goo.gl/APTx14gcQurBvGim8?g_st=iw" target="_blank" rel="noopener">
+        <svg class="map-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        View on map
+      </a>
+      <a class="btn" href="#rsvp">Reply to this invitation</a>
+    </div>
+  </div>
+</header>
+
+<section id="countdown" class="reveal">
+  <h2>Counting down</h2>
+  <div class="count" aria-live="off">
+    <div><b id="c-d">0</b><span>days</span></div>
+    <div><b id="c-h">0</b><span>hours</span></div>
+    <div><b id="c-m">0</b><span>minutes</span></div>
+    <div><b id="c-s">0</b><span>seconds</span></div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="couple">
+    <img id="couplePhoto" alt="Ray and Adepah" src="couple.jpg" onerror="this.onerror=null;this.src=this.dataset.fallback" data-fallback="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'><rect width='3' height='4' fill='%23151311'/><text x='1.5' y='2' font-size='.2' text-anchor='middle' fill='%23c9a24b'>Add couple.jpg</text></svg>">
+    <div>
+      <h2>OUR LOVE STORY ❤️ — Ray &amp; Adepah</h2>
+      <p id="t-story">We met during our National Youth Camp All Night, and we had no idea that night would become the beginning of us.<br><br>
+
+Adepah was sitting in front, Ray was sitting right behind. During ministration, we were asked to hold someone and sing the song We Stand. Ray had no one beside him, so he reached out and held Adepah.<br><br>
+
+That one touch, that one moment — it changed everything.<br><br>
+
+We sang together, we smiled, we took pictures together, thinking it was just for that night. We didn't know we were creating our first memory.<br><br>
+
+After the service, Adepah came for the pictures and videos, and exchanged numbers, and just like that, a conversation started.<br><br>
+
+From requesting pictures to daily check-ups, from late-night calls and prayers together, from genuine friendship to falling deeply in love...<br><br>
+
+What started as Ray holding a stranger to sing We Stand has become Ray &amp; Adepah learning to stand together for a lifetime.<br><br>
+
+Today, we are not just friends — we are fiancés, we are answered prayers to each other.<br><br>
+
+God truly writes the most beautiful love stories.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>The day</h2>
+  <div class="details">
+    <div class="detail-card"><h3>Date</h3><p class="detail-value" id="t-date2">Saturday, 6 February 2027</p><svg class="detail-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 17h.01M12 17h.01"/></svg></div>
+    <div class="detail-card"><h3>Time</h3><p class="detail-value" id="t-time">10:00 AM</p><svg class="detail-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 5v7l-5-3"/></svg><span class="detail-caption">10 AM</span></div>
+    <div><h3>Venue</h3><p id="t-venue">Faith Evangelical Mission World Wide Cathedral,Mataheko</p>
+      <a class="btn solid map-link" id="mapLink" href="https://maps.app.goo.gl/APTx14gcQurBvGim8?g_st=iw" target="_blank" rel="noopener">
+        <svg class="map-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        Get Directions 
+      </a></div>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>Our moments</h2>
+  <div class="gallery" id="gallery">
+    <button class="gallery-item" type="button" aria-label="View photo: A moment together">
+      <img src="relationship1-gallery.jpg" alt="A moment together" loading="lazy" decoding="async">
+    </button>
+    <button class="gallery-item" type="button" aria-label="View photo: Ray and Adepah">
+      <img src="rayadepah.jpeg" alt="Ray and Adepah" loading="lazy" decoding="async">
+    </button>
+  </div>
+  <p id="galleryEmpty" hidden>Open the editor and add photos here.</p>
+</section>
+
+<dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+  <div class="lightbox-content">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close photo viewer">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous photo">&#8249;</button>
+    <figure>
+      <img id="lightboxImage" alt="">
+      <figcaption><span id="lightboxCaption"></span><span id="lightboxCount"></span></figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" type="button" aria-label="Next photo">&#8250;</button>
+  </div>
+</dialog>
+
+<section id="rsvp" class="reveal">
+  <h2>Will you join us?</h2>
+  <p>Please reply so we can plan for you.</p>
+  <form class="rsvp" id="rsvpForm">
+    <label>Your name<input required name="n"></label>
+    <label>Will you attend?<select name="a"><option>Yes, I'll be there</option><option>Sorry, I can't make it</option></select></label>
+    <label>Message (optional)<textarea rows="3" name="m"></textarea></label>
+    <button class="btn solid" type="submit">Send reply</button>
+  </form>
+  <div class="thanks" id="thanks" hidden>Thank you. Your reply is noted.</div>
+</section>
+
+<footer>
+  <svg class="footer-heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>
+  <span class="footer-note">With love,</span>
+  <span class="footer-names" id="f-names">Ray &amp; Adepah</span>
+</footer>
+
+<div class="rsvp-call" aria-label="Call to RSVP">
+  <a href="tel:+233241192575" aria-label="Call Ben to RSVP at 024 119 2575">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2c1.1.4 2.3.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.6 3.6a1 1 0 0 1-.2 1Z"/></svg>
+  Ben <span>024 119 2575</span>
+  </a>
+  <a href="tel:+233552749677" aria-label="Call Prince to RSVP at 055 274 9677">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2c1.1.4 2.3.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.6 3.6a1 1 0 0 1-.2 1Z"/></svg>
+    Prince <span>055 274 9677</span>
+  </a>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
