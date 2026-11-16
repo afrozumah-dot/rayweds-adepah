@@ -120,8 +120,21 @@
     $('rsvpForm').addEventListener('submit', function (event) {
       event.preventDefault();
       var form = event.target;
-      form.hidden = true;
+      var reply = new FormData(form);
+      var name = String(reply.get('n') || '').trim();
+      var attendance = String(reply.get('a') || '').trim();
+      var message = String(reply.get('m') || '').trim();
+      var subject = 'Wedding RSVP from ' + name;
+      var body = [
+        'Name: ' + name,
+        'Attendance: ' + attendance,
+        'Message: ' + (message || '(none)')
+      ].join('\n');
+      var mailto = 'mailto:clotteyraymond4@gmail.com?subject=' +
+        encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
       $('thanks').hidden = false;
+      window.location.href = mailto;
     });
   }
 
