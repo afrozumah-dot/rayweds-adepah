@@ -92,7 +92,7 @@ footer::before{content:"";position:absolute;top:0;left:50%;width:min(180px,40vw)
 .reveal.is-visible{opacity:1;transform:none}
 @keyframes floatGlow{0%{transform:translate3d(0,2%,0) scale(1)}100%{transform:translate3d(0,-2%,0) scale(1.08)}}
 @keyframes ringDrift{0%{translate:0 0;filter:blur(1.5px);opacity:.42}100%{translate:0 -12px;filter:blur(3px);opacity:.72}}
-@keyframes ringGlow{0%{box-shadow:0 0 12px rgba(242,215,125,.28),0 0 32px rgba(212,175,55,.14),inset 0 0 7px rgba(255,233,154,.22)}100%{box-shadow:0 0 22px rgba(242,215,125,.58),0 0 60px rgba(212,175,55,.34),inset 0 0 13px rgba(255,233,154,.48)}}
+@keyframes ringGlow{0%{box-shadow:0 0 12px rgba(54, 48, 26, 0.28),0 0 32px rgba(212,175,55,.14),inset 0 0 7px rgba(255,233,154,.22)}100%{box-shadow:0 0 22px rgba(242,215,125,.58),0 0 60px rgba(212,175,55,.34),inset 0 0 13px rgba(255,233,154,.48)}}
 @keyframes ringTilt{0%{transform:rotate(-32deg) scaleX(1.12)}100%{transform:rotate(32deg) scaleX(1.12)}}
 @keyframes ringTiltReverse{0%{transform:rotate(32deg) scaleX(1.12)}100%{transform:rotate(-32deg) scaleX(1.12)}}
 @keyframes revealUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
